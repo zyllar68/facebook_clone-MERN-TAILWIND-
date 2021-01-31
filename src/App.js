@@ -1,9 +1,13 @@
+import { Global } from '@emotion/react';
+import { GlobalStyle } from './globalStyle';
+import { Login, Home } from './pages';
+
 function App() {
   return (
-    <div className="App">
-      react
-    </div>
+    <>
+      <Global styles={GlobalStyle}/>
+      <Login />
+    </>
   );
 }
-
 export default App;
