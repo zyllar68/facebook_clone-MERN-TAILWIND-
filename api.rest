@@ -1,0 +1,21 @@
+POST http://localhost:8000/users HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "yeah",
+	"lastName": "from postman",
+	"password": "123456",
+	"email": "janejaneeeeeeeee@yeah.com",
+	"birthDate": "2020-04-10",
+	"gender": "male"
+}
+
+### user
+
+POST http://localhost:8000/users/login HTTP/1.1
+content-type: application/json
+
+{
+	"email": "janejaneeeeeeeee@yeah.com",
+	"password": "123456"
+}
